@@ -74,7 +74,6 @@ const ChatScreen = () => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
       <View style={styles.container}>
         <ChatHeader
           name={tripInfo.name}
@@ -95,7 +94,6 @@ const ChatScreen = () => {
         />
         <InputBar to={tripInfo.to} />
       </View>
-    </SafeAreaView>
   );
 };
 
@@ -103,13 +101,8 @@ const ChatScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: scale(16), 
   },
-  header: {
-    paddingVertical: verticalScale(16), 
-    backgroundColor: '#f9f9f9',
-    elevation: 2,
-  },
+
   topRow: {
     flexDirection: 'row',
     alignItems: 'center',
