@@ -97,7 +97,7 @@ const ChatScreen = () => {
   );
 };
 
-//styling for components
+//styling for component
 const styles = StyleSheet.create({
   container: {
     flex: 1,
